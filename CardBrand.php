@@ -8,7 +8,7 @@ class CardBrand {
     // Date source: https://www.bincodes.com/bin-list/,
     // Last updated: Sept. 2, 2023
     private static $brands = [
-        'amex=' > 'American Express',
+        'amex' > 'American Express',
         'unionpay' => 'China UnionPay',
         'diners' => 'Diners Club',
         'discover' => 'Discover Card',
