@@ -53,7 +53,6 @@ class CardBrand {
         $cardNumber = preg_replace('/[^0-9]/', '', $cardNumber);
         foreach (self::$binMap as $code => $rule) {
             $prefix = intval(substr($cardNumber, 0, $rule['len']));
-            echo "$prefix: " . $rule['from'] . ',' . $rule['to'] . "\n";
             if ($prefix >= $rule['from'] && $prefix <= $rule['to']) {
                 return ['code' => $rule['code'], 'brand' => self::$brands[$rule['code']]];
             }

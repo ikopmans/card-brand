@@ -1,0 +1,14 @@
+A simple class to identify payment card brand by it's BIN (first 6 digits).
+Data source: https://www.bincodes.com/bin-list/
+
+Example: 
+$result = CardBrand::find('4111 1111 1111 111');
+print_r($result);
+
+Outputs:
+Array
+(
+    [code] => visa
+    [brand] => Visa
+)
+
